@@ -1,0 +1,83 @@
+{
+  "name": "contact-center-math",
+  "version": "1.0.0",
+  "description": "Erlang C staffing, service level, occupancy, AHT, FCR, CSAT, NPS and cost-per-ticket formulas for support teams. Pure TypeScript, zero dependencies.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Andrew (https://github.com/andrewhall07)",
+  "homepage": "https://andrewhall07.github.io/contact-center-math/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewhall07/contact-center-math.git"
+  },
+  "bugs": "https://github.com/andrewhall07/contact-center-math/issues",
+  "keywords": [
+    "erlang-c",
+    "erlang",
+    "call-center",
+    "contact-center",
+    "workforce-management",
+    "staffing",
+    "service-level",
+    "average-speed-of-answer",
+    "occupancy",
+    "aht",
+    "first-contact-resolution",
+    "csat",
+    "nps",
+    "net-promoter-score",
+    "customer-support",
+    "cost-per-ticket"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./erlang-c": {
+      "types": "./dist/erlang-c.d.ts",
+      "import": "./dist/erlang-c.js"
+    },
+    "./occupancy": {
+      "types": "./dist/occupancy.d.ts",
+      "import": "./dist/occupancy.js"
+    },
+    "./aht": {
+      "types": "./dist/aht.d.ts",
+      "import": "./dist/aht.js"
+    },
+    "./fcr": {
+      "types": "./dist/fcr.d.ts",
+      "import": "./dist/fcr.js"
+    },
+    "./csat": {
+      "types": "./dist/csat.d.ts",
+      "import": "./dist/csat.js"
+    },
+    "./nps": {
+      "types": "./dist/nps.d.ts",
+      "import": "./dist/nps.js"
+    },
+    "./cost-per-ticket": {
+      "types": "./dist/cost-per-ticket.d.ts",
+      "import": "./dist/cost-per-ticket.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "rm -rf dist && tsc -p tsconfig.json",
+    "prepare": "npm run build",
+    "test": "npm run build && node --test test/*.test.mjs",
+    "docs": "npm run build && node scripts/build-docs.mjs"
+  },
+  "devDependencies": {
+    "typescript": "5.6.3"
+  }
+}
