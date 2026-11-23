@@ -75,6 +75,8 @@ test('stays finite for very large centres', () => {
 })
 
 test('shrinkage gross-up never adds an agent to float error', () => {
+  // 21 / 0.7 is 30.000000000000004 in floating point; a naive ceil would give 31.
+  assert.equal(grossUpForShrinkage(21, 0.3), 30)
   assert.equal(grossUpForShrinkage(28, 0.3), 40)
   assert.equal(grossUpForShrinkage(14, 0), 14)
   assert.equal(grossUpForShrinkage(14, 0.35), 22)
