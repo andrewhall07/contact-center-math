@@ -536,7 +536,7 @@ ${body}
 </div></main>
 <footer><div class="wrap">
 <p>MIT licensed · v${pkg.version} · <a href="${REPO}">Source on GitHub</a> · <a href="${REPO}/issues">Report an issue</a></p>
-<p>These formulas also power the free support-metric calculators on the <a href="${RTCI}/tools">Resolution-to-Cost Index</a>.</p>
+<p>These formulas also power the free support-metric calculators on <a href="${RTCI}/tools">Resolution Index (RTCI)</a>.</p>
 </div></footer>
 </body>
 </html>
@@ -637,7 +637,7 @@ ${pages.map((p) => `<a class="card" href="${p.slug}.html"><b>${p.nav}</b><span>$
 <li><b>Honest edge cases.</b> Unstable queues, impossible targets and invalid inputs return explicit flags or errors, never <code>NaN</code>.</li>
 </ul>
 <h2>Prefer a calculator?</h2>
-<p>If you'd rather not write code, the <a href="${RTCI}/tools">Resolution-to-Cost Index calculators</a> run the same formulas in the browser, with staffing tables and charts.</p>`
+<p>If you'd rather not write code, the <a href="${RTCI}/tools">Resolution Index calculators</a> run the same formulas in the browser, with staffing tables and charts.</p>`
 
 writeFileSync(
   join(out, 'index.html'),

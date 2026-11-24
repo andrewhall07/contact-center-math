@@ -88,7 +88,7 @@ Cost per ticket         = fully loaded monthly cost ÷ tickets
 
 ## Calculators
 
-To get the same formulas without writing code, the free calculators on the [Resolution-to-Cost Index](https://www.resolutionindex.com/tools) use them in the browser, with staffing tables and charts.
+To get the same formulas without writing code, the free calculators on [Resolution Index (RTCI)](https://www.resolutionindex.com/tools) use them in the browser, with staffing tables and charts.
 
 ## Development
 
